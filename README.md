@@ -89,6 +89,7 @@ function changeDirectoryMusic {
 ```
 Command below now changes directory to frequently used C:\Users\user\Music
 ```
-cdfoo
+cdmusic
 ```
 You can reach my powershell_aliases file for more git alias examples.
+[Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
