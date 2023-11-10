@@ -41,9 +41,20 @@ Let’s start to create a basic alias for git by adding line below to our ps1 fi
 ```
 New-Alias -Name g -Value git
 ```
-***Whenever you modify your ps1 file, restart your PowerShell to update changes.***
+***WHENEVER YOU MODIFY YOUR PS1 FILE, RESTART YOUR POWERSHELL TO UPDATE CHANGES.***
 
 g became an alias for command git. After restarting PowerShell, we can run git --version command with our new alias as follows:
 ```
 g --version
+```
+## 2. Aliases with Arguments ##
+In order to create alias for commands which take parameters, e.g., `git branch <branchName>` which has <branchName> parameter
+Use the format:
+```
+New-Alias -Name status -Value gitstatus
+
+function gitstatus(){
+    $arg1 = "status"
+    Start-Process git -ArgumentList $arg1 -Wait -NoNewWindow
+}
 ```
