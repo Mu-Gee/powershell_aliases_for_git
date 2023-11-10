@@ -58,3 +58,5 @@ function gitstatus(){
     Start-Process git -ArgumentList $arg1 -Wait -NoNewWindow
 }
 ```
+With this newly created alias, command below checks for the status of the current development branch:
+```status```
