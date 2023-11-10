@@ -13,3 +13,12 @@ In order to make our aliases permanent, we should first find the location of the
 `echo $profile`
 Response will be something similar to this:
 `C:\Users\user\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
+Go to that folder location and see if there is a file named above, if not, create that file as an empty file with ps1 extension, restart your PowerShell and see if everything is OK. If you see an error like this
+``` . : File C:\Users\user\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1 cannot be loaded because running
+scripts is disabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlin
+k/?LinkID=135170.
+At line:1 char:3
++ . 'C:\Users\user\Documents\WindowsPowerShell\Microsoft.PowerShell_p ...
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo: SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess```
