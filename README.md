@@ -29,3 +29,7 @@ At line:1 char:3
     + CategoryInfo: SecurityError: (:) [], PSSecurityException
     + FullyQualifiedErrorId : UnauthorizedAccess
 ```
+It means that your Execution-Policy prevents running PowerShell profiles. In order to run PowerShell profiles, you can run command below and restart PowerShell.
+```
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
