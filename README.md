@@ -59,4 +59,6 @@ function gitstatus(){
 }
 ```
 With this newly created alias, command below checks for the status of the current development branch:
-```status```
+```
+status
+```
