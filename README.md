@@ -19,6 +19,7 @@ echo $profile
 ```
 Response will be something similar to this:
 `C:\Users\user\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
+
 Go to that folder location and see if there is a file named above, if not, create that file as an empty file with ps1 extension, restart your PowerShell and see if everything is OK. If you see an error like this:
 ```
 scripts is disabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlin
@@ -29,7 +30,14 @@ At line:1 char:3
     + CategoryInfo: SecurityError: (:) [], PSSecurityException
     + FullyQualifiedErrorId : UnauthorizedAccess
 ```
+
 It means that your Execution-Policy prevents running PowerShell profiles. In order to run PowerShell profiles, you can run command below and restart PowerShell.
+
 ```
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+## 1. Basic Alias ##
+Let’s start to create a basic alias for git by adding line below to our ps1 file:
+```
+New-Alias -Name g -Value git
 ```
