@@ -21,4 +21,5 @@ At line:1 char:3
 + . 'C:\Users\user\Documents\WindowsPowerShell\Microsoft.PowerShell_p ...
 +   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo: SecurityError: (:) [], PSSecurityException
-    + FullyQualifiedErrorId : UnauthorizedAccess```
+    + FullyQualifiedErrorId : UnauthorizedAccess
+```
