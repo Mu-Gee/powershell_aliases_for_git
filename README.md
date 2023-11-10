@@ -62,9 +62,16 @@ With this newly created alias, command below checks for the status of the curren
 ```
 status
 ```
-
-
-
+## 3. Aliases with Arguments and Parameters ##
 In order to create alias for commands which take parameters, e.g., `git branch <branchName>` which has `<branchName>` parameter
-Use the format:
+Use the format: example alias for the `git commit -m "descriptive message"` command
+```
+New-Alias -Name commit -Value gitcommit
 
+function gitcommit([string]$message){
+    $arg1 = "commit"
+    $arg2 = "-m"
+    $allArgs = @($arg1, $arg2, $message)
+    Start-Process git -ArgumentList $allArgs -Wait -NoNewWindow
+}
+```
