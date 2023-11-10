@@ -48,8 +48,8 @@ g became an alias for command git. After restarting PowerShell, we can run git -
 g --version
 ```
 ## 2. Aliases with Arguments ##
-In order to create alias for commands which take parameters, e.g., `git branch <branchName>` which has <branchName> parameter
-Use the format:
+Although, the things we have done so far are similar to aliases in Linux, things are getting a little bit complicated for commands with arguments, such as 
+`git status` `git pull` etc. In order to make an alias named status for the git status command, we should use function and ArgumentList:
 ```
 New-Alias -Name status -Value gitstatus
 
@@ -58,6 +58,12 @@ function gitstatus(){
     Start-Process git -ArgumentList $arg1 -Wait -NoNewWindow
 }
 ```
+
+
+
+In order to create alias for commands which take parameters, e.g., `git branch <branchName>` which has `<branchName>` parameter
+Use the format:
+
 With this newly created alias, command below checks for the status of the current development branch:
 ```
 status
