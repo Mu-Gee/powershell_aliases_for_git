@@ -75,3 +75,7 @@ function gitcommit([string]$message){
     Start-Process git -ArgumentList $allArgs -Wait -NoNewWindow
 }
 ```
+With this newly created alias, command below creates a commit:
+```
+commit "message goes here" 
+```
