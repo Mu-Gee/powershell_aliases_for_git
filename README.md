@@ -6,3 +6,5 @@ In Windows, setting aliases and making them permanent are a little bit trickier 
 ## Aliases in Windows ##
 To check if we can create an alias in PowerShell, let’s try this command:
 `New-Alias -Name g -Value git`
+Using our new alias g, we can see the git version with command:
+`g --version`
