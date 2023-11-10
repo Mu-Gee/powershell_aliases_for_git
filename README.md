@@ -1,7 +1,7 @@
 # powershell_aliases_for_git
-So you recently moved back to windows or have sarted developing on windows and  
-encountered the long git commands which you'd like to shorten, don't worry, why?  
-Because I gatchu my friend.  
+So you recently moved back to windows or have sarted developing on windows and <br>
+encountered the long git commands which you'd like to shorten, don't worry, why?  <br>
+Because I gatchu my friend. <br>
 In Windows, setting aliases and making them permanent are a little bit trickier than Linux.  
 ## Aliases in Windows ##
 To check if we can create an alias in PowerShell, let’s try this command:  
