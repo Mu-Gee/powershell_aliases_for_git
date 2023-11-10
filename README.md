@@ -102,5 +102,5 @@ You can reach my [powershell aliases](https://github.com/Mu-Gee/powershell_alias
  
 
 ### CREDITS: ###
-[Caglar Terzi]([http://www.google.fr/](https://medium.com/@terzicaglar/setting-permanent-aliases-for-windows-powershell-or-terminal-79a6fe4e998a) "Setting Permanent Aliases for Windows PowerShell or Terminal") <br>
+[Caglar Terzi](https://medium.com/@terzicaglar/setting-permanent-aliases-for-windows-powershell-or-terminal-79a6fe4e998a "Setting Permanent Aliases for Windows PowerShell or Terminal") <br>
 [powershell aliases](https://github.com/Mu-Gee/powershell_aliases_for_git/blob/2a4a0516256d69aa10496c21bc6bfa87ea2a9d54/Microsoft.PowerShell_profile.ps1 "git powershell aliases")
