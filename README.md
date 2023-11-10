@@ -79,3 +79,16 @@ With this newly created alias, command below creates a commit:
 ```
 commit "message goes here" 
 ```
+Last but not least, we can also create aliases for predefined commands such as folder navigating command, cd. Creating an alias for your frequently used directory:
+```
+New-Alias -Name cdmusic -Value changeDirectoryMusic
+
+function changeDirectoryMusic {
+	cd C:\Users\user\Music
+}
+```
+Command below now changes directory to frequently used C:\Users\user\Music
+```
+cdfoo
+```
+You can reach my powershell_aliases file for more git alias examples.
