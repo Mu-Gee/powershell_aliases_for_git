@@ -58,13 +58,13 @@ function gitstatus(){
     Start-Process git -ArgumentList $arg1 -Wait -NoNewWindow
 }
 ```
+With this newly created alias, command below checks for the status of the current development branch:
+```
+status
+```
 
 
 
 In order to create alias for commands which take parameters, e.g., `git branch <branchName>` which has `<branchName>` parameter
 Use the format:
 
-With this newly created alias, command below checks for the status of the current development branch:
-```
-status
-```
