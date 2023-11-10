@@ -4,17 +4,17 @@ encountered the long git commands which you'd like to shorten, don't worry, why?
 In Windows, setting aliases and making them permanent are a little bit trickier than Linux.
 ## Aliases in Windows ##
 To check if we can create an alias in PowerShell, let’s try this command:
-`New-Alias -Name g -Value git`
+```New-Alias -Name g -Value git```
 Using our new alias g, we can see the git version with command:
-`g --version`
+```g --version```
 Note: This alias will be gone when we restart (reopen) PowerShell, since it is not permanent yet.
 ## Making Aliases Permanent in Windows ##
 In order to make our aliases permanent, we should first find the location of the profile file of PowerShell, by typing:
-`echo $profile`
+```echo $profile```
 Response will be something similar to this:
 `C:\Users\user\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
 Go to that folder location and see if there is a file named above, if not, create that file as an empty file with ps1 extension, restart your PowerShell and see if everything is OK. If you see an error like this
-``` . : File C:\Users\user\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1 cannot be loaded because running
+```
 scripts is disabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlin
 k/?LinkID=135170.
 At line:1 char:3
