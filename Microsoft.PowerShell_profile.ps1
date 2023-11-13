@@ -71,14 +71,18 @@ function gitadd([string]$file){
     Start-Process git -ArgumentList $allArgs -Wait -NoNewWindow
 }
 
+###There was a persisting error that suggested that Git was interpreting each word in the commit message as a separate file path
+###Using the git.exe executable directly, rather than relying on the Start-Process cmdlet fixed the previous problem
+###Make sure to adjust the path to git.exe if it's not in your system's PATH. 
 New-Alias -Name commit -Value gitcommit
 
 function gitcommit([string]$message){
     $arg1 = "commit"
     $arg2 = "-m"
     $allArgs = @($arg1, $arg2, $message)
-    Start-Process git -ArgumentList $allArgs -Wait -NoNewWindow
+    & "git.exe" $allArgs
 }
+
 
 New-Alias -Name checkout -Value gitcheckout
 
