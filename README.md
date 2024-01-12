@@ -98,7 +98,7 @@ Command below now changes directory to frequently used C:\Users\user\Music
 ```
 cdmusic
 ```
-You can reach my [powershell aliases](https://github.com/Mu-Gee/powershell_aliases_for_git/blob/2a4a0516256d69aa10496c21bc6bfa87ea2a9d54/Microsoft.PowerShell_profile.ps1 "git powershell aliases") file for more git alias examples.
+You can look at my [powershell aliases](https://github.com/Mu-Gee/powershell_aliases_for_git/blob/2a4a0516256d69aa10496c21bc6bfa87ea2a9d54/Microsoft.PowerShell_profile.ps1 "git powershell aliases") file for more git aliases examples.
  
 
 ### CREDITS: ###
