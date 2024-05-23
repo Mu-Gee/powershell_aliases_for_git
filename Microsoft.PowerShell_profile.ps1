@@ -1,7 +1,7 @@
-New-Alias -Name init -Value gitinit
+New-Alias -Name ginit -Value gitinit
 
 function gitinit() {
-	$arg1 = "ginit"
+	$arg1 = "init"
 	Start-Process git -ArgumentList $arg1 -Wait -NoNewWindow
 }
 
@@ -33,10 +33,10 @@ function gitpull(){
     Start-Process git -ArgumentList $arg1 -Wait -NoNewWindow
 }
 
-New-Alias -Name status -Value gitstatus
+New-Alias -Name gstat -Value gitstatus
 
 function gitstatus(){
-    $arg1 = "gstat"
+    $arg1 = "status"
     Start-Process git -ArgumentList $arg1 -Wait -NoNewWindow
 }
 
